@@ -1,0 +1,86 @@
+
+/******/
+/* CSS REMEDY */
+/******/
+*, *::after, *::before {
+	box-sizing:border-box;  
+  }
+  
+  button, summary {
+	  cursor: pointer;
+  }  
+
+  ul, ol{
+	  list-style: none;
+	  padding: 0;
+	  margin: 0;
+  }
+  
+  img{
+	  display: block;
+	  width: 100%;
+  }
+  
+  
+  
+  
+  
+  /*******/
+  /* CUSTOM PROPERTIES */
+  /*******/
+  :root {
+	  /* startje */
+	  --color-text:#111;
+	  --color-background:#eee;
+	  --font-family: 'Quicksand', sans-serif;
+	  
+  }
+
+main ul{
+	
+	display:flex;
+	gap:.5em;
+	
+	overflow-x:auto;
+	
+	scroll-snap-type: x mandatory;
+	
+	
+	overscroll-behavior: contain auto;
+	
+	
+	-webkit-overflow-scrolling: touch;
+  }
+  
+  main ul li {
+	
+	flex-basis:5em;
+	flex-shrink:0;
+	align-items:center;
+	gap:.25em;
+	
+	
+
+	scroll-snap-align: center;
+	
+	
+
+	display:flex;
+	flex-direction:column;
+  }
+
+  nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav img{
+	margin-left: 1em;
+	width: 4em;
+}
+
+nav img:nth-of-type(2){
+	height: 3em;
+	width: 3em;
+}
